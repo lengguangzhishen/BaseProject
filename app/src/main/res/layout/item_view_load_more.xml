@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view_load_more"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp">
+
+        <com.wumai.baseproject.customview.recycleviewrefresh.android5.CustomMaterialProgressBarSupport
+            android:id="@+id/progress_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:progressBackgroundColor="@color/white"
+            app:progressColor="@color/color_00b459"
+            app:progressSmallSize="true" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="正在加载中..."
+            android:textColor="@color/load_text" />
+    </LinearLayout>
+</RelativeLayout>
+
+

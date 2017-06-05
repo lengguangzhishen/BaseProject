@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="gridview"  />
+    <item type="id" name="webview" />
+    <item type="id" name="scrollview" />
+    <item type="id" name="recyclerview" />
+    <item type="id" name="viewPagerWithTabView" >0x99999</item>
+
+
+    <item type="id" name="latelysearchid" />
+</resources>

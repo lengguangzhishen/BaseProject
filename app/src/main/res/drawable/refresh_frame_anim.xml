@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@mipmap/img_pull_ref_b1"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b2"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b3"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b4"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b5"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b6"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b7"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b8"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b9"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b10"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b11"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b12"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b13"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b14"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b15"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b16"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b17"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b18"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b19"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/img_pull_ref_b20"
+        android:duration="30" />
+</animation-list>

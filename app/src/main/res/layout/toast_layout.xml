@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_gravity="center"
+        >
+
+    <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@drawable/toast_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+        <ImageView
+                android:id="@+id/pb_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/loading"
+                />
+        <TextView
+                android:id="@+id/tv_loading_message"
+                android:textColor="#ffffff"
+                android:textSize="21sp"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:visibility="visible">
+        <TextView
+                android:id="@+id/tv_only_message"
+                android:textColor="#ffffff"
+                android:textSize="16.5sp"
+                android:padding="20dp"
+                android:background="@drawable/toast_bg"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+    </LinearLayout>
+
+</LinearLayout>

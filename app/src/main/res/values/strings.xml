@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+    <string name="base_url">http://59.110.156.224/gjkxapi-web</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="refresh">刷新</string>
+    <string name="loading">加载中...</string>
+    <string name="toast_bad_network">抱歉，您的网络连接中断\n请检查是否已经连接网络…</string>
+    <string name="reload">重新加载</string>
+    <string name="empty_layout">暂无数据, 点击重试</string>
+    <string name="give_up_save">取消</string>
+    <string name="bt_ok_cancel">确认</string>
+    <string name="net_fail">网络不给力</string>
+
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

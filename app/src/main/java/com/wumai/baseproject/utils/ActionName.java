@@ -1,0 +1,12 @@
+package com.wumai.baseproject.utils;
+
+public interface ActionName {
+
+    String ACTION_PREFIX = "com.qian.re.reqian";
+
+    String ACTION_HEARTBEAT = ACTION_PREFIX + ".ACTION_HEARTBEAT"; //心跳接口
+
+    String ACTION_APP_ENTER_BACKGROUND_BROADCAST=ACTION_PREFIX+".ACTION_APP_ENTER_BACKGROUND_BROADCAST";//app切入后台
+
+    String ACTION_APP_ENTER_FOREGROUND_BROADCAST=ACTION_PREFIX+".APP_ENTER_FOREGROUND_BROADCAST";//app切入前台
+}
