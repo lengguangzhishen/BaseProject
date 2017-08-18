@@ -107,8 +107,13 @@ public abstract class BaseLoadMoreRecycleViewAdapter<T, VH extends RecyclerView.
             return;
         } else {
             final T item = getItem(position);
-            onBindItemViewHolder((VH) holder, item, position);
-            bindItemViewClickListener((VH) holder, item, position);
+            try {
+                onBindItemViewHolder((VH) holder, item, position);
+                bindItemViewClickListener((VH) holder, item, position);
+            } catch (Exception e) {
+
+            }
+
         }
     }
 

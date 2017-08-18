@@ -8,7 +8,7 @@ import com.wumai.baseproject.mvp.base.IBaseView;
 /**
  * Created by litengfei on 2016/12/14.
  */
-public abstract class MVPBaseActivity<V extends IBaseView, T extends BasePresenter<V>> extends BaseActivity implements IBaseView {
+public abstract class MVPBaseActivity<V extends IBaseView, T extends BasePresenter<V>> extends BaseActivity {
 
     protected T mPresenter;
 
@@ -29,24 +29,32 @@ public abstract class MVPBaseActivity<V extends IBaseView, T extends BasePresent
 
     protected abstract T createPresenter();
 
-    @Override
     public void setWaitingDialogStatus(boolean isShow) {
-        if (isShow) {
-            showDialog();
-        } else {
-            dismissDialog();
+        try {
+            if (isShow) {
+                showDialog();
+            } else {
+                dismissDialog();
+            }
+        } catch (Exception e) {
+
         }
+
     }
 
-    @Override
     public void setWaitingDialogStatus(boolean isShow, String message) {
-        if (message == null) {
-            return;
+        try {
+            if (message == null) {
+                return;
+            }
+            if (isShow) {
+                showDialog(message);
+            } else {
+                dismissDialog();
+            }
+        } catch (Exception e) {
+
         }
-        if (isShow) {
-            showDialog(message);
-        } else {
-            dismissDialog();
-        }
+
     }
 }

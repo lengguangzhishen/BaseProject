@@ -172,7 +172,8 @@ public class JumperInvokeHandler implements InvocationHandler {
             Class<?> argClz = arg == null ? null : arg.getClass();
 
             if (arg == null) {
-                holderList.add(new ParamHolder(parameterAnnotations[i], i, genericTypes[i]));
+//                holderList.add(new ParamHolder(parameterAnnotations[i], i, genericTypes[i]));
+                continue;
             } else if (annotation instanceof IntentFlag &&
                     (argClz == Integer.class || argClz == int.class)) {
                 intent.addFlags((Integer) arg);
