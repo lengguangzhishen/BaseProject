@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.wumai.baseproject.config.Const;
+import com.wumai.baseproject.network.NetApi;
 
 import org.xutils.common.Callback;
 import org.xutils.x;
@@ -18,7 +19,6 @@ import butterknife.Unbinder;
 public abstract class BaseFragment extends Fragment implements Const {
 
     private boolean injected = false;
-    protected Callback.Cancelable cancelable;
     private Unbinder bind;
     protected BaseActivity mActivity;
 
@@ -32,11 +32,13 @@ public abstract class BaseFragment extends Fragment implements Const {
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle
             savedInstanceState) {
         injected = true;
-        View view = x.view().inject(this, inflater, container);
+        View view = getRootView(inflater);
         bind = ButterKnife.bind(this, view);
 
         return view;
     }
+
+    protected abstract View getRootView(LayoutInflater inflater);
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
@@ -59,11 +61,8 @@ public abstract class BaseFragment extends Fragment implements Const {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        //捆绑网络请求,如果该页面destory,未完成的网络请求也一并取消;
-        if (cancelable != null && !cancelable.isCancelled()) {
-            cancelable.cancel();
-        }
 
+        NetApi.stopRequest(this);
         if (bind != null) {
             bind.unbind();
         }

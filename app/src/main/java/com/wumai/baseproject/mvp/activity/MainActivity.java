@@ -1,8 +1,9 @@
-package com.wumai.baseproject;
+package com.wumai.baseproject.mvp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.wumai.baseproject.R;
 import com.wumai.baseproject.app.BaseActivity;
 import com.wumai.baseproject.utils.ImmerseStatusBar;
 

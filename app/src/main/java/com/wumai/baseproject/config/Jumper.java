@@ -6,7 +6,7 @@ package com.wumai.baseproject.config;
 
 import com.wumai.baselibrary.jumper.annotation.ActivityInfo;
 import com.wumai.baselibrary.jumper.annotation.Extra;
-import com.wumai.baseproject.LoginActivity;
+import com.wumai.baseproject.mvp.activity.LoginActivity;
 import com.wumai.baseproject.utils.MyIntentHandler;
 
 public interface Jumper extends IntentNames {

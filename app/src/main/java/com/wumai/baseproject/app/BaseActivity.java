@@ -11,6 +11,7 @@ import android.view.inputmethod.InputMethodManager;
 import com.wumai.baseproject.R;
 import com.wumai.baseproject.config.Const;
 import com.wumai.baseproject.config.IntentNames;
+import com.wumai.baseproject.network.NetApi;
 import com.wumai.baseproject.utils.ActivityManager;
 import com.wumai.baseproject.utils.BackgroundUtils;
 import com.wumai.baseproject.utils.ProgressDialogUtil;
@@ -53,6 +54,7 @@ public abstract class BaseActivity extends TitleBarActivity implements Const, In
     protected void onDestroy() {
 
         dismissDialog();
+        NetApi.stopRequest(this);
         ActivityManager.getInstance().removeActivity(this);
 
         super.onDestroy();

@@ -389,4 +389,13 @@ public class NetApi {
                 .build();
         x.image().bind(imageView, url, imageOptions);
     }
+
+    /**
+     * 停止网络请求, 预留一下!!
+     * @param obj
+     */
+    public static void stopRequest(Object obj) {
+        // TODO: 2017/8/18 预留okhttp请求的
+//        OkHttpUtils.getInstance().cancelTag(obj);
+    }
 }
