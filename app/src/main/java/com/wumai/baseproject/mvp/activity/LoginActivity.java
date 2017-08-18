@@ -58,8 +58,6 @@ public class LoginActivity extends MVPBaseActivity<ILoginView, LoginPresenter> i
     @Override
     public void onSuccess() {
 
-        JUMPER.gotoLogin(1, true).startActivity(mContext);
-        JUMPER.gotoLogin(1, true).startActivityForResult(this, LOGIN_REQUEST);
     }
 
     @Override
