@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yuguo.thecarpenter.thecarpenterrepair.View.CustomView.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2"
+        app:msv_emptyView="@layout/empty_view"
+        app:msv_errorView="@layout/offline_view"
+        app:msv_loadingView="@layout/loading_view"
+        app:msv_viewState="loading">
+
+    </com.yuguo.thecarpenter.thecarpenterrepair.View.CustomView.MultiStateView>
+
+</LinearLayout>

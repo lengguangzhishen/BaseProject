@@ -2,6 +2,7 @@ package com.wumai.baseproject.app;
 
 import android.os.Bundle;
 
+import com.wumai.baseproject.customview.MultiStateView;
 import com.wumai.baseproject.mvp.base.BasePresenter;
 import com.wumai.baseproject.mvp.base.IBaseView;
 
@@ -56,5 +57,9 @@ public abstract class MVPBaseFragment<V extends IBaseView, T extends BasePresent
 
         }
 
+    }
+
+    public MultiStateView getMultiStateView() {
+        return null;
     }
 }

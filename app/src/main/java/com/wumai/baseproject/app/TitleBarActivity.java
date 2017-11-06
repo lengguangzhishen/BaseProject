@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.wumai.baseproject.R;
+import com.wumai.baseproject.utils.ImmerseStatusBar;
 import com.wumai.baseproject.utils.UiUtils;
 
 import org.xutils.common.util.DensityUtil;
@@ -99,6 +100,18 @@ public abstract class TitleBarActivity extends FragmentActivity {
             mBar.mLeftImage.setVisibility(View.VISIBLE);
         } else {
             mBar.mLeftImage.setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * 设置沉浸式状态栏是否显示
+     * @param visible
+     */
+    public void setImmerseStatusVisible(boolean visible) {
+        mContentView.setClipToPadding(visible);
+        mContentView.setFitsSystemWindows(visible);
+        if (visible) {
+            ImmerseStatusBar.setImmerseStatusBar(this);
         }
     }
 

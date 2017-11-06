@@ -35,7 +35,11 @@ public abstract class BaseActivity extends TitleBarActivity implements Const, In
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = this;
-        setContentView(getContentViewId());
+        if (getRootView() == null) {
+            setContentView(getContentViewId());
+        } else {
+            setContentView(getRootView());
+        }
         ActivityManager.getInstance().putActivity(this);
         sBaseActivity = this;
         waitingDialog = new ProgressDialogUtil(this);
@@ -46,6 +50,10 @@ public abstract class BaseActivity extends TitleBarActivity implements Const, In
 
 
     protected abstract int getContentViewId();
+
+    protected View getRootView() {
+        return null;
+    }
 
     protected abstract void initTitle();
 
