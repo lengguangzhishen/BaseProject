@@ -29,4 +29,5 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.android.support:recyclerview-v7:25.0.1'
     compile files('libs/BASE64.jar')
+    compile project(':refreshlibrary')
 }

@@ -1,5 +1,7 @@
 package com.wumai.baseproject.app;
 
+import com.wumai.baseproject.mvp.base.IBaseRefreshListView;
+
 import java.util.List;
 
 /**
@@ -7,7 +9,7 @@ import java.util.List;
  * Email: litengfeilo@163.com
  */
 
-public interface IBaseRefreshLayoutView<T> extends IBaseRefreshListView{
+public interface IBaseRefreshLayoutView<T> extends IBaseRefreshListView {
     void replaceDataAndNotify(List<T> datas);
 
     void appendDataAndNotify(List<T> datas);

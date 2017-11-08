@@ -1,9 +1,10 @@
 package com.wumai.baseproject.app;
 
 import com.wumai.baselibrary.log.Logger;
-import com.yuguo.thecarpenter.thecarpenterrepair.Tools.HttpLoadNum;
-import com.yuguo.thecarpenter.thecarpenterrepair.Tools.Utils;
-import com.yuguo.thecarpenter.thecarpenterrepair.config.AppInfo;
+import com.wumai.baseproject.config.AppInfo;
+import com.wumai.baseproject.mvp.base.BasePresenter;
+import com.wumai.baseproject.utils.HttpLoadNum;
+import com.wumai.baseproject.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

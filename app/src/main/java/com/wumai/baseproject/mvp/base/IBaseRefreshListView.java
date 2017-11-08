@@ -1,6 +1,7 @@
 package com.wumai.baseproject.mvp.base;
 
-import com.wumai.baseproject.customview.recycleviewrefresh.base.BaseLoadMoreRecycleViewAdapter;
+
+import com.wumai.refreshlibrary.recycleviewrefresh.base.BaseLoadMoreRecycleViewAdapter;
 
 /**
  * Created by litengfei on 2017/4/27.

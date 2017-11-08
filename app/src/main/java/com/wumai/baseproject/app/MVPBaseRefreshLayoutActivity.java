@@ -5,6 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.wumai.baselibrary.log.Logger;
+import com.wumai.baseproject.R;
+import com.wumai.baseproject.config.AppInfo;
+import com.wumai.baseproject.utils.HttpLoadNum;
+import com.wumai.baseproject.utils.Utils;
 import com.wumai.refreshlibrary.recycleviewrefresh.base.BaseLoadMoreRecycleViewAdapter;
 import com.wumai.refreshlibrary.recycleviewrefresh.itemholder.ItemViewHolder;
 import com.wumai.refreshlibrary.recycleviewrefresh.listener.IOnLoadMoreListener;
@@ -13,10 +17,6 @@ import com.wumai.refreshlibrary.recycleviewrefresh.listener.IRecycleViewOnItemCl
 import com.wumai.refreshlibrary.recycleviewrefresh.listener.IRecycleViewOnItemLongClickListener;
 import com.wumai.refreshlibrary.recycleviewrefresh.refresh.RecycleViewCommonRefresh;
 import com.wumai.refreshlibrary.recycleviewrefresh.refresh.RefreshManager;
-import com.yuguo.thecarpenter.thecarpenterrepair.R;
-import com.yuguo.thecarpenter.thecarpenterrepair.Tools.HttpLoadNum;
-import com.yuguo.thecarpenter.thecarpenterrepair.Tools.Utils;
-import com.yuguo.thecarpenter.thecarpenterrepair.config.AppInfo;
 
 import java.util.List;
 

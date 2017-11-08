@@ -44,7 +44,12 @@ public abstract class BaseActivity extends TitleBarActivity implements Const, In
         sBaseActivity = this;
         waitingDialog = new ProgressDialogUtil(this);
         initTitle();
+        initRefreshLayout();
         initData();
+
+    }
+
+    protected void initRefreshLayout() {
 
     }
 
