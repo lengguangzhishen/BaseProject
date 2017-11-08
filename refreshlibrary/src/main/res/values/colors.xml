@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="load_text">#999</color>
+    <color name="color_text_666666">#666666</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_00b459">#00b459</color>
+    <!--顶部titlebar的背景色-->
+    <color name="color_44464c">#44464C</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_90000000">#90000000</color>
+    <color name="color_fb7e23">#fb7e23</color>
+    <color name="red_wine">#FB8989</color>
+    <color name="color_e1711f">#e1711f</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_c3c4c5">#c3c4c5</color>
+    <color name="color_buttom_tag_f8f8f8">#f8f8f8</color>
+    <color name="color_black">#000000</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_f87f5e">#F87F5E</color>
+    <color name="color_537ff9">#537FF9</color>
+
+    <!--默认灰色背景-->
+    <color name="color_f8f8f8">#F8F8F8</color>
+
+    <color name="color_f6f6f6">#F6F6F6</color>
+
+    <color name="color_f2f2f2">#F2F2F2</color>
+
+    <!--因为之前写的背景是这样, 避免一个一个修改, 就直接把值改为f8f8f8-->
+    <color name="color_efeff4">#F8F8F8</color>
+
+    <color name="color_lines">#efeff4</color>
+    <!--條目分割線的顏色-->
+    <color name="color_divider_eaeced">#eaeced</color>
+
+
+    <color name="color_background_f2f4f5">#f2f4f5</color>
+    <color name="color_999999">#ff999999</color>
+    <color name="color_text_999999">#999999</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="ffffff">#ffffff</color>
+    <color name="E5E5E5">#E5E5E5</color>
+    <color name="text_678DF8">#678DF8</color>
+    <color name="text_323232">#323232</color>
+    <color name="color_6666cc">#6666cc</color>
+    <color name="color_4776F8">#4776F8</color>
+    <color name="color_414141">#414141</color>
+    <color name="color_4776f8">#4776F8</color>
+    <color name="color_f65252">#F65252</color>
+    <color name="color_4977f8">#4977F8</color>
+    <color name="color_f9f9f9">#F9F9F9</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_bbbbbb">#BBBBBB</color>
+    <color name="color_5782F8">#5782F8</color>
+    <color name="color_fca9a9">#FCA9A9</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_fffff0">#fffff0</color>
+    <color name="color_faaa92">#faaa92</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_content_bg">#F3F3F3</color>
+</resources>
