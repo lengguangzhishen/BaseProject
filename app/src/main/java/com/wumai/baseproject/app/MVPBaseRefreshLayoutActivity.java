@@ -96,10 +96,16 @@ public abstract class MVPBaseRefreshLayoutActivity<V extends IBaseRefreshLayoutV
     }
 
     protected void setPullToRefreshEnabled (boolean pullToRefreshEnabled) {
+        if (mRefreshManager == null || mRefreshManager.getmPullToRefreshRecyclerView() == null) {
+            return;
+        }
         mRefreshManager.getmPullToRefreshRecyclerView().setPullToRefreshEnabled(pullToRefreshEnabled);
     }
 
     protected void setNestedScrollingEnabled (boolean nestedScrollingEnabled) {
+        if (mRecyclerView == null) {
+            return;
+        }
         mRecyclerView.setNestedScrollingEnabled(nestedScrollingEnabled);
     }
 
@@ -109,6 +115,8 @@ public abstract class MVPBaseRefreshLayoutActivity<V extends IBaseRefreshLayoutV
     }
 
     public void refreshComplete() {
+        if (recyclerView == null)
+            return;
         recyclerView.getmPullToRefreshRecyclerView().onRefreshComplete();
 
     }
@@ -118,21 +126,29 @@ public abstract class MVPBaseRefreshLayoutActivity<V extends IBaseRefreshLayoutV
     }
 
     public void setLoadStatus(boolean loadStatus) {
+        if (mRefreshManager == null)
+            return;
         mRefreshManager.setLoadingStatus(loadStatus);
 
     }
 
     public void setHasMoreData(boolean hasMoreData) {
+        if (mAdapter == null)
+            return;
         mAdapter.setHasMoreData(hasMoreData);
 
     }
 
     public void setHasFooter(boolean hasFooter) {
+        if (mAdapter == null)
+            return;
         mAdapter.setHasFooter(hasFooter);
 
     }
 
     public void replaceDataAndNotify(List<K> datas) {
+        if (mAdapter == null)
+            return;
         mAdapter.replaceListAndNotify(datas);
         try {
             if (mAdapter.getList().size() >= AppInfo.PAGE_SIZE &&
@@ -145,6 +161,8 @@ public abstract class MVPBaseRefreshLayoutActivity<V extends IBaseRefreshLayoutV
     }
 
     public void appendDataAndNotify(List<K> datas) {
+        if (mAdapter == null)
+            return;
         mAdapter.appendToListAndNotify(datas);
     }
 
