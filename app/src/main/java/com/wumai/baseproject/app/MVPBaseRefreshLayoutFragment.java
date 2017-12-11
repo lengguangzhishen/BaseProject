@@ -72,6 +72,7 @@ public abstract class MVPBaseRefreshLayoutFragment<V extends IBaseRefreshLayoutV
         });
 
         mRefreshManager.setPullToRefreshRecyclerView();
+
         mRefreshManager.getmPullToRefreshRecyclerView().setPullToRefreshEnabled(true);
         mRecyclerView = mRefreshManager.getmRecycleView();
         mRecyclerView.setNestedScrollingEnabled(false);
